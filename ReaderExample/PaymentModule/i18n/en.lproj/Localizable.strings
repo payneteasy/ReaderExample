@@ -1,0 +1,24 @@
+
+"PNEReaderState_CONNECTED" = "Terminal is connected";
+
+/* No comment provided by engineer. */
+"PNEReaderState_CONNECTING" = "Connecting to terminal ...";
+
+/* No comment provided by engineer. */
+"PNEReaderState_MIURA_BATTERY_STATUS_RESPONSE" = "PNEReaderState_MIURA_BATTERY_STATUS_RESPONSE";
+
+/* No comment provided by engineer. */
+"PNEReaderState_MIURA_CARD_STATUS" = "PNEReaderState_MIURA_CARD_STATUS";
+
+/* No comment provided by engineer. */
+"PNEReaderState_MIURA_DEVICE_INFO" = "PNEReaderState_MIURA_DEVICE_INFO";
+
+/* No comment provided by engineer. */
+"PNEReaderState_MIURA_DEVICE_STATUS_CHANGE" = "PNEReaderState_MIURA_DEVICE_STATUS_CHANGE";
+
+/* No comment provided by engineer. */
+"PNEReaderState_NOT_CONNECTED" = "Unable to connect to terminal";
+
+/* No comment provided by engineer. */
+"PNEReaderState_STARTED" = "Connecting to terminal ...";
+

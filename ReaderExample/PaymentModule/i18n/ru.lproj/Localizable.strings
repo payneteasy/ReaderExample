@@ -1,0 +1,17 @@
+
+"PNEReaderState_CONNECTED" = "Терминал подключен";
+
+"PNEReaderState_CONNECTING" = "Подключение к терминалу...";
+
+"PNEReaderState_MIURA_BATTERY_STATUS_RESPONSE" = "PNEReaderState_MIURA_BATTERY_STATUS_RESPONSE";
+
+"PNEReaderState_MIURA_CARD_STATUS" = "PNEReaderState_MIURA_CARD_STATUS";
+
+"PNEReaderState_MIURA_DEVICE_INFO" = "PNEReaderState_MIURA_DEVICE_INFO";
+
+"PNEReaderState_MIURA_DEVICE_STATUS_CHANGE" = "PNEReaderState_MIURA_DEVICE_STATUS_CHANGE";
+
+"PNEReaderState_NOT_CONNECTED" = "Не удалось подключиться к терминалу";
+
+"PNEReaderState_STARTED" = "Подключение к терминалу ...";
+
