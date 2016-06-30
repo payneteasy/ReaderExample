@@ -1,0 +1,20 @@
+PaymentParameters includes(RMBuilder){
+    # reader configuration service base url. For example: https://gate.payneteasy.com/paynet
+    NSString * baseUrl;
+
+    # merchant login
+    NSString * merchantLogin;
+
+    # merchant control key
+    NSString * merchantKey;
+
+    # end point id
+    int64_t merchantEndPointId;
+
+    # merchant name, some readers can display it on its display
+    NSString * merchantName;
+
+    NSDecimalNumber * amount;
+
+    NSString * currency;
+}

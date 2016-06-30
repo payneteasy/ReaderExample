@@ -27,7 +27,7 @@
     self = [super init];
     if (self) {
         _payment    = aParameters;
-        _presenter  = [[PaymentPresenter alloc] initWithView:self];
+        _presenter  = [[PaymentPresenter alloc] initWithView:self parameters:aParameters];
     }
     return self;
 }
@@ -45,6 +45,7 @@
 
 - (void)setupElements {
     self.view.backgroundColor = [UIColor whiteColor];
+    self.title = _payment.merchantName;
 
     [self.view addSubview:self.statusLabel];
 }

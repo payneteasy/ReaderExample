@@ -9,9 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @protocol IPaymentView;
+@class PaymentParameters;
 
 @interface PaymentPresenter : NSObject<IPaymentPresenter>
 
-- (instancetype)initWithView:(id<IPaymentView> )aView;
+- (instancetype)initWithView:(id<IPaymentView> )aView parameters:(PaymentParameters *)aPayment;
 
 @end

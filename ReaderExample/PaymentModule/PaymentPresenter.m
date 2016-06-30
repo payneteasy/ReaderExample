@@ -11,6 +11,7 @@
 #import <PNEReaderEvent.h>
 #import <PNECardError.h>
 #import "PaymentContract.h"
+#import "PaymentParameters.h"
 #import <PNEReaderInfo.h>
 #import <PNEProcessingEvent.h>
 #import <PNEReaderManager.h>
@@ -20,6 +21,7 @@
 #import "ReaderEventTextProducer.h"
 #import "ProcessingEventTextProducer.h"
 #import "PNECard.h"
+#import "PaymentParameters.h"
 
 @interface PaymentPresenter () <PNEReaderPresenter>
 @end
@@ -29,16 +31,18 @@
     __weak id <IPaymentView>             _view;
            ReaderEventTextProducer     * _readerEventTextProducer;
            ProcessingEventTextProducer * _processingEventTextProducer;
+           PaymentParameters           * _payment;
 }
 
 #pragma mark - IPaymentPresenter
 
-- (instancetype)initWithView:(id<IPaymentView> )aView {
+- (instancetype)initWithView:(id<IPaymentView> )aView parameters:(PaymentParameters *)aPayment{
     self = [super init];
     if (self) {
         _view = aView;
         _readerEventTextProducer = [[ReaderEventTextProducer alloc] init];
         _processingEventTextProducer = [[ProcessingEventTextProducer alloc] init];
+        _payment = aPayment;
     }
     return self;
 }
@@ -48,8 +52,8 @@
     PNEReaderFactory *factory = [[PNEReaderFactory alloc] init];
     PNEReaderInfo *reader = [PNEReaderInfo infoWithType:PNEReaderType_MIURA];
     _manager = [factory createManager:reader
-                               amount:[NSDecimalNumber decimalNumberWithString:@"1.00"]
-                             currency:@"RUB"
+                               amount:_payment.amount
+                             currency:_payment.currency
                             presenter:self];
     [_manager start];
 }
@@ -70,10 +74,10 @@
     [_view showStatus:[NSString stringWithFormat:@"%@ %@ *** %@", aCard.scheme, aCard.panFirstDigits, aCard.panLastDigits]];
 
     return [PNEProcessingContinuation
-            continuationWithBaseUrl: @"https://paynet-qa.clubber.me/paynet"
-                      merchantLogin: @"paynet-demo"
-                        merchantKey: @"5D0BB936-46BB-11E5-A54A-735A47388A3F"
-                 merchantEndPointId: 1
+            continuationWithBaseUrl: _payment.baseUrl
+                      merchantLogin: _payment.merchantLogin
+                        merchantKey: _payment.merchantKey
+                 merchantEndPointId: _payment.merchantEndPointId
                  orderInvoiceNumber:[[NSUUID UUID] UUIDString]
     ];
 }

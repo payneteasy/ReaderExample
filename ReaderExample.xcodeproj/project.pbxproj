@@ -21,6 +21,7 @@
 		8A72F9DB1D2487B7004D1A92 /* ReaderEventTextProducer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A72F9DA1D2487B7004D1A92 /* ReaderEventTextProducer.m */; };
 		8A72F9DC1D248CF7004D1A92 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A72F9DE1D248CF7004D1A92 /* Localizable.strings */; };
 		8A72F9E61D249FE4004D1A92 /* ProcessingEventTextProducer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A72F9E51D249FE4004D1A92 /* ProcessingEventTextProducer.m */; };
+		8A72F9E91D24AF64004D1A92 /* PaymentParametersBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A72F9E81D24AF64004D1A92 /* PaymentParametersBuilder.m */; };
 		D96529CAD505B778E723E1CA /* libPods-ReaderExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CC559A422094AE5E7222E6 /* libPods-ReaderExample.a */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,8 @@
 		8A72F9E31D248E94004D1A92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8A72F9E41D249FE4004D1A92 /* ProcessingEventTextProducer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessingEventTextProducer.h; sourceTree = "<group>"; };
 		8A72F9E51D249FE4004D1A92 /* ProcessingEventTextProducer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessingEventTextProducer.m; sourceTree = "<group>"; };
+		8A72F9E71D24AF64004D1A92 /* PaymentParametersBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentParametersBuilder.h; sourceTree = "<group>"; };
+		8A72F9E81D24AF64004D1A92 /* PaymentParametersBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentParametersBuilder.m; sourceTree = "<group>"; };
 		A41C532CB5E70CA241F2EC12 /* Pods-ReaderExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReaderExample/Pods-ReaderExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -188,7 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				B2DF6DC9C1E2A33E6BA317BC /* i18n */,
-				B2DF6D1F8E26338E383D5284 /* Model */,
+				B2DF6D1F8E26338E383D5284 /* Parameters */,
 				8A72F9CD1D246388004D1A92 /* PaymentContract.h */,
 				8A72F9CE1D246479004D1A92 /* PaymentViewController.h */,
 				8A72F9CF1D246479004D1A92 /* PaymentViewController.m */,
@@ -198,13 +201,15 @@
 			path = PaymentModule;
 			sourceTree = "<group>";
 		};
-		B2DF6D1F8E26338E383D5284 /* Model */ = {
+		B2DF6D1F8E26338E383D5284 /* Parameters */ = {
 			isa = PBXGroup;
 			children = (
+				8A72F9E71D24AF64004D1A92 /* PaymentParametersBuilder.h */,
+				8A72F9E81D24AF64004D1A92 /* PaymentParametersBuilder.m */,
 				8A72F9D41D2468D1004D1A92 /* PaymentParameters.h */,
 				8A72F9D51D2468D1004D1A92 /* PaymentParameters.m */,
 			);
-			path = Model;
+			path = Parameters;
 			sourceTree = "<group>";
 		};
 		B2DF6DC9C1E2A33E6BA317BC /* i18n */ = {
@@ -413,6 +418,7 @@
 				8A72F9DB1D2487B7004D1A92 /* ReaderEventTextProducer.m in Sources */,
 				8A08BD3F1D244E4D00468D2A /* main.m in Sources */,
 				8A72F9D01D246479004D1A92 /* PaymentViewController.m in Sources */,
+				8A72F9E91D24AF64004D1A92 /* PaymentParametersBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

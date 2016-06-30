@@ -12,7 +12,7 @@
 "PNEReaderState_STARTED" = "Подключение к терминалу ...";
 
 "PNEReaderState_MIURA_CARD_STATUS__INSERT_CARD" = "Вставьте карту";
-"PNEReaderState_MIURA_CARD_STATUS__READING_CARD" = "Чтение карты";
+"PNEReaderState_MIURA_CARD_STATUS__READING_CARD" = "Чтение карты ...";
 
 "MiuraPinEntryStatus_INCORRECT_PIN" = "Неверный ПИН. Повторите ввод.";
 "MiuraPinEntryStatus_LAST_POSSIBLE_ATTEMPT" = "Последняя попытка для ввода ПИН, если ПИН будет введен неправильно, карта заблокируется";
