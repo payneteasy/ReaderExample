@@ -24,6 +24,7 @@
 "PNEReaderState_MIURA_DEVICE_INFO__MPI_RESTARTING" = "Терминал перегружается ...";
 
 "MiuraPinEntryStatus_UNKNOWN" = "Идет обработка ...";
+
 "PNEReaderState_MIURA_DEVICE_INFO__PROCESSING" = "Идет обработка ...";
 
 "PNEProcessingEventType_EXCEPTION" = "Ошибка";
@@ -46,3 +47,5 @@
 "MiuraBatteryStatusType_FULLY_CHARGED" = "Заряжено";
 "MiuraBatteryStatusType_NOT_CHARGING" = "Не заряжяется";
 "MiuraBatteryStatusType_UNKNOWN" = "Неизвестно(%@)";
+"MiuraPinEntryStatus__ENTERING_PIN" = "Вводится ПИН: %@";
+"MiuraPinEntryStatus__ENTER_PIN" = "Введите ПИН";

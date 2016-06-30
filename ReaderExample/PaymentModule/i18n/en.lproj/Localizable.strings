@@ -46,3 +46,5 @@
 "MiuraBatteryStatusType_FULLY_CHARGED" = "Charged";
 "MiuraBatteryStatusType_NOT_CHARGING" = "Not charging";
 "MiuraBatteryStatusType_UNKNOWN" = "Unknown(%@)";
+"MiuraPinEntryStatus__ENTERING_PIN" = "Entering PIN: %@";
+"MiuraPinEntryStatus__ENTER_PIN" = "Enter PIN";

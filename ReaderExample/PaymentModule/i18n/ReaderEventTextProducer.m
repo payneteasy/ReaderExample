@@ -84,6 +84,7 @@
     );
 }
 
+//     <MiuraDeviceStatusMessage: self.pinDigits=0, self.pinEntryStatus=5, self.type=1, self.text=Enter PIN>
 - (NSString *)miuraDeviceStatus:(id)aMessage {
     if(![aMessage isKindOfClass:[MiuraDeviceStatusMessage class]]) {
         return [NSString stringWithFormat:@"Unknown class: %@", aMessage];
@@ -98,7 +99,12 @@
             case MiuraPinEntryStatus_PIN_ENTRY_ERROR:       return NSLocalizedString(@"MiuraPinEntryStatus_PIN_ENTRY_ERROR", nil);
             case MiuraPinEntryStatus_PIN_OK:                return NSLocalizedString(@"MiuraPinEntryStatus_PIN_OK", nil);
 
+            // pin entering
+            case 5:
+                return [self enteringPin:device.pinDigits];
+
             default:
+
                 return NSLocalizedString(@"MiuraPinEntryStatus_UNKNOWN", nil);
         }
     }
@@ -120,6 +126,19 @@
     }
 
     return NSLocalizedString(@"PNEReaderState_MIURA_DEVICE_INFO__PROCESSING", nil);
+}
+
+- (NSString *)enteringPin:(NSUInteger)aDigits {
+    if(aDigits == 0) {
+        return NSLocalizedString(@"MiuraPinEntryStatus__ENTER_PIN", nil);
+    }
+
+    NSMutableString * pinDigits = [[NSMutableString alloc] init];
+    for(int i=0; i<aDigits; i++) {
+        [pinDigits appendString:@"*"];
+    }
+
+    return NSLocalizedFormatString(@"MiuraPinEntryStatus__ENTERING_PIN", pinDigits);
 }
 
 - (NSString *)miuraCardStatus:(id)aMessage {
