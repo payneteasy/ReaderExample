@@ -11,10 +11,11 @@
 
 @implementation PaymentParameters
 
-- (instancetype)initWithBaseUrl:(NSString *)baseUrl merchantLogin:(NSString *)merchantLogin merchantKey:(NSString *)merchantKey merchantEndPointId:(int64_t)merchantEndPointId merchantName:(NSString *)merchantName amount:(NSDecimalNumber *)amount currency:(NSString *)currency
+- (instancetype)initWithConfigurationBaseUrl:(NSString *)configurationBaseUrl processingBaseUrl:(NSString *)processingBaseUrl merchantLogin:(NSString *)merchantLogin merchantKey:(NSString *)merchantKey merchantEndPointId:(int64_t)merchantEndPointId merchantName:(NSString *)merchantName amount:(NSDecimalNumber *)amount currency:(NSString *)currency
 {
   if ((self = [super init])) {
-    _baseUrl = [baseUrl copy];
+    _configurationBaseUrl = [configurationBaseUrl copy];
+    _processingBaseUrl = [processingBaseUrl copy];
     _merchantLogin = [merchantLogin copy];
     _merchantKey = [merchantKey copy];
     _merchantEndPointId = merchantEndPointId;
@@ -33,14 +34,14 @@
 
 - (NSString *)description
 {
-  return [NSString stringWithFormat:@"%@ - \n\t baseUrl: %@; \n\t merchantLogin: %@; \n\t merchantKey: %@; \n\t merchantEndPointId: %lld; \n\t merchantName: %@; \n\t amount: %@; \n\t currency: %@; \n", [super description], _baseUrl, _merchantLogin, _merchantKey, _merchantEndPointId, _merchantName, _amount, _currency];
+  return [NSString stringWithFormat:@"%@ - \n\t configurationBaseUrl: %@; \n\t processingBaseUrl: %@; \n\t merchantLogin: %@; \n\t merchantKey: %@; \n\t merchantEndPointId: %lld; \n\t merchantName: %@; \n\t amount: %@; \n\t currency: %@; \n", [super description], _configurationBaseUrl, _processingBaseUrl, _merchantLogin, _merchantKey, _merchantEndPointId, _merchantName, _amount, _currency];
 }
 
 - (NSUInteger)hash
 {
-  NSUInteger subhashes[] = {[_baseUrl hash], [_merchantLogin hash], [_merchantKey hash], ABS(_merchantEndPointId), [_merchantName hash], [_amount hash], [_currency hash]};
+  NSUInteger subhashes[] = {[_configurationBaseUrl hash], [_processingBaseUrl hash], [_merchantLogin hash], [_merchantKey hash], ABS(_merchantEndPointId), [_merchantName hash], [_amount hash], [_currency hash]};
   NSUInteger result = subhashes[0];
-  for (int ii = 1; ii < 7; ++ii) {
+  for (int ii = 1; ii < 8; ++ii) {
     unsigned long long base = (((unsigned long long)result) << 32 | subhashes[ii]);
     base = (~base) + (base << 18);
     base ^= (base >> 31);
@@ -62,7 +63,8 @@
   }
   return
     _merchantEndPointId == object->_merchantEndPointId &&
-    (_baseUrl == object->_baseUrl ? YES : [_baseUrl isEqual:object->_baseUrl]) &&
+    (_configurationBaseUrl == object->_configurationBaseUrl ? YES : [_configurationBaseUrl isEqual:object->_configurationBaseUrl]) &&
+    (_processingBaseUrl == object->_processingBaseUrl ? YES : [_processingBaseUrl isEqual:object->_processingBaseUrl]) &&
     (_merchantLogin == object->_merchantLogin ? YES : [_merchantLogin isEqual:object->_merchantLogin]) &&
     (_merchantKey == object->_merchantKey ? YES : [_merchantKey isEqual:object->_merchantKey]) &&
     (_merchantName == object->_merchantName ? YES : [_merchantName isEqual:object->_merchantName]) &&

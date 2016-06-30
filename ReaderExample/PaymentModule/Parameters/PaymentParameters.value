@@ -1,6 +1,10 @@
 PaymentParameters includes(RMBuilder){
-    # reader configuration service base url. For example: https://gate.payneteasy.com/paynet
-    NSString * baseUrl;
+
+    # reader configuration service base url. For example https://paynet-qa.clubber.me/paynet/rki-proxy
+    NSString * configurationBaseUrl;
+
+    # processing base url. For example: https://paynet-qa.clubber.me/paynet
+    NSString * processingBaseUrl;
 
     # merchant login
     NSString * merchantLogin;

@@ -7,7 +7,8 @@
 
 @implementation PaymentParametersBuilder
 {
-  NSString *_baseUrl;
+  NSString *_configurationBaseUrl;
+  NSString *_processingBaseUrl;
   NSString *_merchantLogin;
   NSString *_merchantKey;
   int64_t _merchantEndPointId;
@@ -23,8 +24,9 @@
 
 + (instancetype)paymentParametersFromExistingPaymentParameters:(PaymentParameters *)existingPaymentParameters
 {
-  return [[[[[[[[PaymentParametersBuilder paymentParameters]
-                withBaseUrl:existingPaymentParameters.baseUrl]
+  return [[[[[[[[[PaymentParametersBuilder paymentParameters]
+                 withConfigurationBaseUrl:existingPaymentParameters.configurationBaseUrl]
+                withProcessingBaseUrl:existingPaymentParameters.processingBaseUrl]
                withMerchantLogin:existingPaymentParameters.merchantLogin]
               withMerchantKey:existingPaymentParameters.merchantKey]
              withMerchantEndPointId:existingPaymentParameters.merchantEndPointId]
@@ -35,12 +37,18 @@
 
 - (PaymentParameters *)build
 {
-  return [[PaymentParameters alloc] initWithBaseUrl:_baseUrl merchantLogin:_merchantLogin merchantKey:_merchantKey merchantEndPointId:_merchantEndPointId merchantName:_merchantName amount:_amount currency:_currency];
+  return [[PaymentParameters alloc] initWithConfigurationBaseUrl:_configurationBaseUrl processingBaseUrl:_processingBaseUrl merchantLogin:_merchantLogin merchantKey:_merchantKey merchantEndPointId:_merchantEndPointId merchantName:_merchantName amount:_amount currency:_currency];
 }
 
-- (instancetype)withBaseUrl:(NSString *)baseUrl
+- (instancetype)withConfigurationBaseUrl:(NSString *)configurationBaseUrl
 {
-  _baseUrl = [baseUrl copy];
+  _configurationBaseUrl = [configurationBaseUrl copy];
+  return self;
+}
+
+- (instancetype)withProcessingBaseUrl:(NSString *)processingBaseUrl
+{
+  _processingBaseUrl = [processingBaseUrl copy];
   return self;
 }
 

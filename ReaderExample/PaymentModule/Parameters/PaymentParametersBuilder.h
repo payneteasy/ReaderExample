@@ -10,7 +10,9 @@
 
 - (PaymentParameters *)build;
 
-- (instancetype)withBaseUrl:(NSString *)baseUrl;
+- (instancetype)withConfigurationBaseUrl:(NSString *)configurationBaseUrl;
+
+- (instancetype)withProcessingBaseUrl:(NSString *)processingBaseUrl;
 
 - (instancetype)withMerchantLogin:(NSString *)merchantLogin;
 

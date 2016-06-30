@@ -21,14 +21,15 @@
 - (void)onStartTapped:(id)onStartTapped {
     NSLog(@"Pay pressed");
 
-    PaymentParameters * parameters = [[PaymentParameters alloc]
-            initWithBaseUrl:@"https://paynet-qa.clubber.me/paynet"
-              merchantLogin:@"paynet-demo"
-                merchantKey:@"5D0BB936-46BB-11E5-A54A-735A47388A3F"
-         merchantEndPointId:1
-               merchantName:@"Paynet Demo"
-                     amount:[NSDecimalNumber decimalNumberWithString:@"1.00"]
-                   currency:@"RUB"];
+    PaymentParameters *parameters = [[PaymentParameters alloc]
+            initWithConfigurationBaseUrl:@"https://paynet-qa.clubber.me/paynet/rki-proxy"
+                       processingBaseUrl:@"https://paynet-qa.clubber.me/paynet"
+                           merchantLogin:@"paynet-demo"
+                             merchantKey:@"5D0BB936-46BB-11E5-A54A-735A47388A3F"
+                      merchantEndPointId:1
+                            merchantName:@"Paynet Demo"
+                                  amount:[NSDecimalNumber decimalNumberWithString:@"1.00"]
+                                currency:@"RUB"];
 
     PaymentViewController * controller = [[PaymentViewController alloc] initWithPaymentParameters:parameters];
     [self.navigationController pushViewController:controller animated:YES];

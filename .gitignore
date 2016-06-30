@@ -12,3 +12,4 @@ Pods/
 *.xcworkspace/
 iOSInjectionProject/
 build/
+xcodebuild.log

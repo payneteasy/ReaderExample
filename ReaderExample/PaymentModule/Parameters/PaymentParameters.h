@@ -8,9 +8,13 @@
 @interface PaymentParameters : NSObject <NSCopying>
 
 /**
- * reader configuration service base url. For example: https://gate.payneteasy.com/paynet
+ * reader configuration service base url. For example https://paynet-qa.clubber.me/paynet/rki-proxy
  */
-@property (nonatomic, readonly, copy) NSString *baseUrl;
+@property (nonatomic, readonly, copy) NSString *configurationBaseUrl;
+/**
+ * processing base url. For example: https://paynet-qa.clubber.me/paynet
+ */
+@property (nonatomic, readonly, copy) NSString *processingBaseUrl;
 /**
  * merchant login
  */
@@ -30,7 +34,7 @@
 @property (nonatomic, readonly, copy) NSDecimalNumber *amount;
 @property (nonatomic, readonly, copy) NSString *currency;
 
-- (instancetype)initWithBaseUrl:(NSString *)baseUrl merchantLogin:(NSString *)merchantLogin merchantKey:(NSString *)merchantKey merchantEndPointId:(int64_t)merchantEndPointId merchantName:(NSString *)merchantName amount:(NSDecimalNumber *)amount currency:(NSString *)currency;
+- (instancetype)initWithConfigurationBaseUrl:(NSString *)configurationBaseUrl processingBaseUrl:(NSString *)processingBaseUrl merchantLogin:(NSString *)merchantLogin merchantKey:(NSString *)merchantKey merchantEndPointId:(int64_t)merchantEndPointId merchantName:(NSString *)merchantName amount:(NSDecimalNumber *)amount currency:(NSString *)currency;
 
 @end
 

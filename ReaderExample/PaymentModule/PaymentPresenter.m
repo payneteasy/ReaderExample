@@ -10,18 +10,17 @@
 #import <PNEReaderFactory.h>
 #import <PNEReaderEvent.h>
 #import <PNECardError.h>
-#import "PaymentContract.h"
-#import "PaymentParameters.h"
 #import <PNEReaderInfo.h>
 #import <PNEProcessingEvent.h>
 #import <PNEReaderManager.h>
 #import <PNEProcessingContinuation.h>
-#import "PaymentPresenter.h"
+#import <PNECard.h>
+#import <PNEConfigurationContinuation.h>
 #import "PaymentContract.h"
+#import "PaymentParameters.h"
+#import "PaymentPresenter.h"
 #import "ReaderEventTextProducer.h"
 #import "ProcessingEventTextProducer.h"
-#import "PNECard.h"
-#import "PaymentParameters.h"
 
 @interface PaymentPresenter () <PNEReaderPresenter>
 @end
@@ -50,7 +49,7 @@
 
 - (void)startPayment {
     PNEReaderFactory *factory = [[PNEReaderFactory alloc] init];
-    PNEReaderInfo *reader = [PNEReaderInfo infoWithType:PNEReaderType_MIURA];
+    PNEReaderInfo *reader = [PNEReaderInfo infoWithType:PNEReaderType_MIURA_OR_SPIRE];
     _manager = [factory createManager:reader
                                amount:_payment.amount
                              currency:_payment.currency
@@ -74,7 +73,7 @@
     [_view showStatus:[NSString stringWithFormat:@"%@ %@ *** %@", aCard.scheme, aCard.panFirstDigits, aCard.panLastDigits]];
 
     return [PNEProcessingContinuation
-            continuationWithBaseUrl: _payment.baseUrl
+            continuationWithBaseUrl: _payment.processingBaseUrl
                       merchantLogin: _payment.merchantLogin
                         merchantKey: _payment.merchantKey
                  merchantEndPointId: _payment.merchantEndPointId
@@ -89,6 +88,16 @@
 - (void)onProcessingEvent:(PNEProcessingEvent *)aEvent {
     NSString * text = [_processingEventTextProducer textFor:aEvent];
     [_view showStatus:text];
+}
+
+- (PNEConfigurationContinuation *)onConfiguration {
+    return [[PNEConfigurationContinuation alloc]
+            initWithBaseUrl:_payment.configurationBaseUrl
+              merchantLogin:_payment.merchantLogin
+                merchantKey:_payment.merchantKey
+         merchantEndPointId:_payment.merchantEndPointId
+               merchantName:_payment.merchantName
+    ];
 }
 
 
