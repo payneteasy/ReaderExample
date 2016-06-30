@@ -82,6 +82,7 @@
 #pragma mark - IPaymentView
 
 - (void)showStatus:(NSString *)aStatus {
+    NSLog(@"Status: %@", aStatus);
     _statusLabel.text = aStatus;
 }
 

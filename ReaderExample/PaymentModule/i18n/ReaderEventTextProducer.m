@@ -75,7 +75,7 @@
             break;
 
         default:
-            status = NSLocalizedString(@"MiuraBatteryStatusType_UNKNOWN", nil);
+            status = NSLocalizedFormatString(@"MiuraBatteryStatusType_UNKNOWN", @(battery.batteryStatus));
             break;
     }
 

@@ -45,4 +45,4 @@
 "MiuraBatteryStatusType_CHARGING" = "Charging";
 "MiuraBatteryStatusType_FULLY_CHARGED" = "Charged";
 "MiuraBatteryStatusType_NOT_CHARGING" = "Not charging";
-"MiuraBatteryStatusType_UNKNOWN" = "Unknown";
+"MiuraBatteryStatusType_UNKNOWN" = "Unknown(%@)";
