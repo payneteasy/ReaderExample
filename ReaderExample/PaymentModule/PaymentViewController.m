@@ -85,5 +85,9 @@
     _statusLabel.text = aStatus;
 }
 
+- (void)dealloc {
+    [_presenter stopPayment];
+}
+
 
 @end

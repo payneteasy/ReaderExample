@@ -14,17 +14,21 @@
 #import <PNEReaderInfo.h>
 #import <PNEProcessingEvent.h>
 #import <PNEReaderManager.h>
+#import <PNEProcessingContinuation.h>
 #import "PaymentPresenter.h"
 #import "PaymentContract.h"
 #import "ReaderEventTextProducer.h"
+#import "ProcessingEventTextProducer.h"
+#import "PNECard.h"
 
 @interface PaymentPresenter () <PNEReaderPresenter>
 @end
 
 @implementation PaymentPresenter {
-           id <PNEReaderManager>     _manager;
-    __weak id <IPaymentView>         _view;
-           ReaderEventTextProducer * _readerEventTextProducer;
+           id <PNEReaderManager>         _manager;
+    __weak id <IPaymentView>             _view;
+           ReaderEventTextProducer     * _readerEventTextProducer;
+           ProcessingEventTextProducer * _processingEventTextProducer;
 }
 
 #pragma mark - IPaymentPresenter
@@ -34,6 +38,7 @@
     if (self) {
         _view = aView;
         _readerEventTextProducer = [[ReaderEventTextProducer alloc] init];
+        _processingEventTextProducer = [[ProcessingEventTextProducer alloc] init];
     }
     return self;
 }
@@ -61,7 +66,16 @@
 }
 
 - (PNEProcessingContinuation *)onCard:(PNECard *)aCard {
-    return nil;
+
+    [_view showStatus:[NSString stringWithFormat:@"%@ %@ *** %@", aCard.scheme, aCard.panFirstDigits, aCard.panLastDigits]];
+
+    return [PNEProcessingContinuation
+            continuationWithBaseUrl: @"https://paynet-qa.clubber.me/paynet"
+                      merchantLogin: @"paynet-demo"
+                        merchantKey: @"5D0BB936-46BB-11E5-A54A-735A47388A3F"
+                 merchantEndPointId: 1
+                 orderInvoiceNumber:[[NSUUID UUID] UUIDString]
+    ];
 }
 
 - (void)onCardError:(PNECardError *)aError {
@@ -69,7 +83,8 @@
 }
 
 - (void)onProcessingEvent:(PNEProcessingEvent *)aEvent {
-    [_view showStatus:aEvent.description];
+    NSString * text = [_processingEventTextProducer textFor:aEvent];
+    [_view showStatus:text];
 }
 
 

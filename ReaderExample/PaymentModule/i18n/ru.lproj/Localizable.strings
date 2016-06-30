@@ -1,17 +1,48 @@
 
+/* PNEReaderState */
+
 "PNEReaderState_CONNECTED" = "Терминал подключен";
 
 "PNEReaderState_CONNECTING" = "Подключение к терминалу...";
 
-"PNEReaderState_MIURA_BATTERY_STATUS_RESPONSE" = "PNEReaderState_MIURA_BATTERY_STATUS_RESPONSE";
-
-"PNEReaderState_MIURA_CARD_STATUS" = "PNEReaderState_MIURA_CARD_STATUS";
-
-"PNEReaderState_MIURA_DEVICE_INFO" = "PNEReaderState_MIURA_DEVICE_INFO";
-
-"PNEReaderState_MIURA_DEVICE_STATUS_CHANGE" = "PNEReaderState_MIURA_DEVICE_STATUS_CHANGE";
+"PNEReaderState_MIURA_BATTERY_STATUS_RESPONSE" = "Батарея %@: %@ %";
 
 "PNEReaderState_NOT_CONNECTED" = "Не удалось подключиться к терминалу";
 
 "PNEReaderState_STARTED" = "Подключение к терминалу ...";
 
+"PNEReaderState_MIURA_CARD_STATUS__INSERT_CARD" = "Вставьте карту";
+"PNEReaderState_MIURA_CARD_STATUS__READING_CARD" = "Чтение карты";
+
+"MiuraPinEntryStatus_INCORRECT_PIN" = "Неверный ПИН. Повторите ввод.";
+"MiuraPinEntryStatus_LAST_POSSIBLE_ATTEMPT" = "Последняя попытка для ввода ПИН, если ПИН будет введен неправильно, карта заблокируется";
+"MiuraPinEntryStatus_PIN_ENTRY_COMPLETED" = "Ввод ПИН завершен";
+"MiuraPinEntryStatus_PIN_ENTRY_ERROR" = "Ошибка при вводе ПИН";
+"MiuraPinEntryStatus_PIN_OK" = "ПИН введен правильно";
+"PNEReaderState_MIURA_DEVICE_INFO__APPLICATION_SELECTION" = "Выберите приложение на терминале";
+"PNEReaderState_MIURA_DEVICE_INFO__DEVICE_POWERING_OFF" = "Терминал выключается ...";
+"PNEReaderState_MIURA_DEVICE_INFO__MPI_RESTARTING" = "Терминал перегружается ...";
+
+"MiuraPinEntryStatus_UNKNOWN" = "Идет обработка ...";
+"PNEReaderState_MIURA_DEVICE_INFO__PROCESSING" = "Идет обработка ...";
+
+"PNEProcessingEventType_EXCEPTION" = "Ошибка";
+"PNEProcessingEventType_ADVICE_REQUIRED" = "Обработка платежа...";
+"PNEProcessingEventType_ADVICE_RESPONSE_WAITING" = "Ожидание ответа ...";
+"PNEProcessingEventType_ADVICE_SENDING" = "Передача подтверждение ...";
+"PNEProcessingEventType_ERROR_3D_SECURE" = "Ошибка настройки гейта, обратитесь в службу поддержки";
+"PNEProcessingEventType_SALE_SENDING" = "Передача платежа...";
+"PNEProcessingEventType_SALE_RESPONSE_WAITING" = "Ожидание ответа...";
+"PNEProcessingEventType_UNKNOWN" = "Неизвестный тип события";
+
+"PaynetStatusTypeApproved" = "ОДОБРЕНО";
+"PaynetStatusTypeDeclined" = "Отклонено";
+"PaynetStatusTypeError" = "Ошибка, обратитесь в службу поддержки";
+"PaynetStatusTypeFiltered" = "Отклонено";
+"PaynetStatusTypeProcessing" = "Обработка...";
+"PaynetStatusTypeUnknown" = "Ошибка, обратитесь в службу поддержки";
+
+"MiuraBatteryStatusType_CHARGING" = "Заряжается";
+"MiuraBatteryStatusType_FULLY_CHARGED" = "Заряжено";
+"MiuraBatteryStatusType_NOT_CHARGING" = "Не заряжяется";
+"MiuraBatteryStatusType_UNKNOWN" = "Неизвестно";

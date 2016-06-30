@@ -20,6 +20,7 @@
 		8A72F9D61D2468D1004D1A92 /* PaymentParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A72F9D51D2468D1004D1A92 /* PaymentParameters.m */; };
 		8A72F9DB1D2487B7004D1A92 /* ReaderEventTextProducer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A72F9DA1D2487B7004D1A92 /* ReaderEventTextProducer.m */; };
 		8A72F9DC1D248CF7004D1A92 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A72F9DE1D248CF7004D1A92 /* Localizable.strings */; };
+		8A72F9E61D249FE4004D1A92 /* ProcessingEventTextProducer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A72F9E51D249FE4004D1A92 /* ProcessingEventTextProducer.m */; };
 		D96529CAD505B778E723E1CA /* libPods-ReaderExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CC559A422094AE5E7222E6 /* libPods-ReaderExample.a */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,8 @@
 		8A72F9DA1D2487B7004D1A92 /* ReaderEventTextProducer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderEventTextProducer.m; sourceTree = "<group>"; };
 		8A72F9E21D248E85004D1A92 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8A72F9E31D248E94004D1A92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8A72F9E41D249FE4004D1A92 /* ProcessingEventTextProducer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessingEventTextProducer.h; sourceTree = "<group>"; };
+		8A72F9E51D249FE4004D1A92 /* ProcessingEventTextProducer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessingEventTextProducer.m; sourceTree = "<group>"; };
 		A41C532CB5E70CA241F2EC12 /* Pods-ReaderExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReaderExample/Pods-ReaderExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -210,6 +213,8 @@
 				8A72F9DE1D248CF7004D1A92 /* Localizable.strings */,
 				8A72F9D91D2487B7004D1A92 /* ReaderEventTextProducer.h */,
 				8A72F9DA1D2487B7004D1A92 /* ReaderEventTextProducer.m */,
+				8A72F9E41D249FE4004D1A92 /* ProcessingEventTextProducer.h */,
+				8A72F9E51D249FE4004D1A92 /* ProcessingEventTextProducer.m */,
 			);
 			path = i18n;
 			sourceTree = "<group>";
@@ -400,6 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A72F9E61D249FE4004D1A92 /* ProcessingEventTextProducer.m in Sources */,
 				8A08BD451D244E4D00468D2A /* ViewController.m in Sources */,
 				8A08BD421D244E4D00468D2A /* AppDelegate.m in Sources */,
 				8A72F9D61D2468D1004D1A92 /* PaymentParameters.m in Sources */,
@@ -507,7 +513,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -546,7 +552,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -560,6 +566,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReaderExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.payneteasy.ReaderExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -572,6 +579,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReaderExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.payneteasy.ReaderExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";

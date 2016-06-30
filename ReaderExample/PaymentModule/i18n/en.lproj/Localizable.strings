@@ -1,24 +1,48 @@
 
+/* PNEReaderState */
+
 "PNEReaderState_CONNECTED" = "Terminal is connected";
 
-/* No comment provided by engineer. */
 "PNEReaderState_CONNECTING" = "Connecting to terminal ...";
 
-/* No comment provided by engineer. */
-"PNEReaderState_MIURA_BATTERY_STATUS_RESPONSE" = "PNEReaderState_MIURA_BATTERY_STATUS_RESPONSE";
+"PNEReaderState_MIURA_BATTERY_STATUS_RESPONSE" = "Battery %@: %@ %";
 
-/* No comment provided by engineer. */
-"PNEReaderState_MIURA_CARD_STATUS" = "PNEReaderState_MIURA_CARD_STATUS";
-
-/* No comment provided by engineer. */
-"PNEReaderState_MIURA_DEVICE_INFO" = "PNEReaderState_MIURA_DEVICE_INFO";
-
-/* No comment provided by engineer. */
-"PNEReaderState_MIURA_DEVICE_STATUS_CHANGE" = "PNEReaderState_MIURA_DEVICE_STATUS_CHANGE";
-
-/* No comment provided by engineer. */
 "PNEReaderState_NOT_CONNECTED" = "Unable to connect to terminal";
 
-/* No comment provided by engineer. */
 "PNEReaderState_STARTED" = "Connecting to terminal ...";
 
+
+"PNEReaderState_MIURA_CARD_STATUS__INSERT_CARD" = "Insert Card";
+"PNEReaderState_MIURA_CARD_STATUS__READING_CARD" = "Please wait, reading card ...";
+
+"MiuraPinEntryStatus_INCORRECT_PIN" = "Incorrect PIN";
+"MiuraPinEntryStatus_LAST_POSSIBLE_ATTEMPT" = "Last Attempt To Enter PIN";
+"MiuraPinEntryStatus_PIN_ENTRY_COMPLETED" = "PIN Entry completed";
+"MiuraPinEntryStatus_PIN_ENTRY_ERROR" = "PIN Entry ERROR";
+"MiuraPinEntryStatus_PIN_OK" = "PIN OK";
+"MiuraPinEntryStatus_UNKNOWN" = "Please wait ...";
+"PNEReaderState_MIURA_DEVICE_INFO__APPLICATION_SELECTION" = "Select application on terminal";
+"PNEReaderState_MIURA_DEVICE_INFO__DEVICE_POWERING_OFF" = "Terminal is powering off...";
+"PNEReaderState_MIURA_DEVICE_INFO__MPI_RESTARTING" = "Terminal is restarting ...";
+"PNEReaderState_MIURA_DEVICE_INFO__PROCESSING" = "Please wait ...";
+
+"PNEProcessingEventType_EXCEPTION" = "Error";
+"PNEProcessingEventType_ADVICE_REQUIRED" = "Processing advice ...";
+"PNEProcessingEventType_ADVICE_RESPONSE_WAITING" = "Waiting for advice ...";
+"PNEProcessingEventType_ADVICE_SENDING" = "Sending advice ...";
+"PNEProcessingEventType_ERROR_3D_SECURE" = "Gate does not configure properly, contact your support";
+"PNEProcessingEventType_SALE_SENDING" = "Sending sale...";
+"PNEProcessingEventType_SALE_RESPONSE_WAITING" = "Waiting sale response ...";
+"PNEProcessingEventType_UNKNOWN" = "Unknown event type";
+
+"PaynetStatusTypeApproved" = "APPROVED";
+"PaynetStatusTypeDeclined" = "DECLINED";
+"PaynetStatusTypeError" = "ERROR, Contact Your Support";
+"PaynetStatusTypeFiltered" = "DECLINED";
+"PaynetStatusTypeProcessing" = "Processing ...";
+"PaynetStatusTypeUnknown" = "ERROR, Contact Your Support";
+
+"MiuraBatteryStatusType_CHARGING" = "Charging";
+"MiuraBatteryStatusType_FULLY_CHARGED" = "Charged";
+"MiuraBatteryStatusType_NOT_CHARGING" = "Not charging";
+"MiuraBatteryStatusType_UNKNOWN" = "Unknown";
