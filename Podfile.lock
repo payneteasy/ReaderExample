@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   PaynetEasyReader:
-    :commit: d0f7aee467fb7cb3b8aaeb049f5eb8abd72feb36
+    :commit: 7aeb3d4331437e704690ea33a67d8e9c380f5d7e
     :git: git@github.com:payneteasy/PaynetEasyReader.git
 
 SPEC CHECKSUMS:

@@ -43,6 +43,7 @@
         _view = aView;
         _readerEventTextProducer = [[ReaderEventTextProducer alloc] init];
         _processingEventTextProducer = [[ProcessingEventTextProducer alloc] init];
+        _errorEventTextProducer = [[ErrorEventTextProducer alloc] init];
         _payment = aPayment;
     }
     return self;
