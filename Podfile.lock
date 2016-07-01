@@ -8,17 +8,16 @@ PODS:
     - OMGHTTPURLRQ/UserAgent
 
 DEPENDENCIES:
-  - PaynetEasyReader (from `git@github.com:payneteasy/PaynetEasyReader.git`, tag `0.2.0`)
+  - PaynetEasyReader (from `git@github.com:payneteasy/PaynetEasyReader.git`)
 
 EXTERNAL SOURCES:
   PaynetEasyReader:
     :git: git@github.com:payneteasy/PaynetEasyReader.git
-    :tag: 0.2.0
 
 CHECKOUT OPTIONS:
   PaynetEasyReader:
+    :commit: d0f7aee467fb7cb3b8aaeb049f5eb8abd72feb36
     :git: git@github.com:payneteasy/PaynetEasyReader.git
-    :tag: 0.2.0
 
 SPEC CHECKSUMS:
   BerTlv: f36e41fdec4329ee1edde586427756e06f344814
@@ -26,6 +25,6 @@ SPEC CHECKSUMS:
   PaynetEasyReader: f5f0a44b22a9591d8c0873fddebcf379b2c11b42
   TDOAuth: f7e356e834295b83c7b5066ee72a30f128c5f722
 
-PODFILE CHECKSUM: 91956fdf032e2470a25c4e6383b71749ec12cdd7
+PODFILE CHECKSUM: 4f0e2273d2b052390623471fda6799d0640fe2fb
 
 COCOAPODS: 1.0.1

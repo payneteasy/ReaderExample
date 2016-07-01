@@ -21,6 +21,7 @@
 #import "PaymentPresenter.h"
 #import "ReaderEventTextProducer.h"
 #import "ProcessingEventTextProducer.h"
+#import "ErrorEventTextProducer.h"
 
 @interface PaymentPresenter () <PNEReaderPresenter>
 @end
@@ -30,6 +31,7 @@
     __weak id <IPaymentView>             _view;
            ReaderEventTextProducer     * _readerEventTextProducer;
            ProcessingEventTextProducer * _processingEventTextProducer;
+           ErrorEventTextProducer      * _errorEventTextProducer;
            PaymentParameters           * _payment;
 }
 
@@ -65,7 +67,12 @@
 
 - (void)stateChanged:(PNEReaderEvent *)aEvent {
     NSString *text = [_readerEventTextProducer textFor:aEvent];
-    [_view showStatus:text];
+
+    if(aEvent.state == PNEReaderState_NOT_CONNECTED) {
+        [_view showError:text];
+    } else {
+        [_view showStatus:text];
+    }
 }
 
 - (PNEProcessingContinuation *)onCard:(PNECard *)aCard {
@@ -82,7 +89,7 @@
 }
 
 - (void)onCardError:(PNECardError *)aError {
-    [_view showStatus:aError.description];
+    [_view showError:[_errorEventTextProducer textForError:aError]];
 }
 
 - (void)onProcessingEvent:(PNEProcessingEvent *)aEvent {

@@ -9,7 +9,6 @@
 #import "ProcessingEventTextProducer.h"
 #import <PaynetStatusResponse.h>
 #import <PNEProcessingEvent.h>
-#import <PaynetEasyReader/PNEProcessingEvent.h>
 
 @implementation ProcessingEventTextProducer
 

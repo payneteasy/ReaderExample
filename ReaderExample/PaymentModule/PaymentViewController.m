@@ -20,7 +20,6 @@
 @implementation PaymentViewController {
     PaymentParameters       * _payment;
     id<IPaymentPresenter>     _presenter;
-//    UIActivityIndicatorView *
 }
 
 - (instancetype)initWithPaymentParameters:(PaymentParameters *)aParameters {
@@ -71,7 +70,7 @@
 - (UILabel *)statusLabel {
     if(_statusLabel == nil) {
         _statusLabel = [[UILabel alloc] init];
-        _statusLabel.backgroundColor = [UIColor grayColor];
+        _statusLabel.backgroundColor = [UIColor colorWithWhite:.8 alpha:1];
         _statusLabel.numberOfLines = 0;
         _statusLabel.lineBreakMode = NSLineBreakByCharWrapping;
         _statusLabel.translatesAutoresizingMaskIntoConstraints = NO;
@@ -84,6 +83,13 @@
 
 - (void)showStatus:(NSString *)aStatus {
     NSLog(@"Status: %@", aStatus);
+    _statusLabel.textColor = [UIColor blackColor];
+    _statusLabel.text = aStatus;
+}
+
+- (void)showError:(NSString *)aStatus {
+    NSLog(@"Error: %@", aStatus);
+    _statusLabel.textColor = [UIColor redColor];
     _statusLabel.text = aStatus;
 }
 

@@ -14,7 +14,7 @@
 
 //-(void) showDescription:(NSString *)aDescription;
 //
-//-(void) showError:(NSString *) aError;
+-(void) showError:(NSString *) aError;
 //
 //-(void) showProgress:(BOOL)aProgressVisible;
 

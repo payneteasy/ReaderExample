@@ -15,6 +15,7 @@
 		8A08BD4D1D244E4D00468D2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A08BD4B1D244E4D00468D2A /* LaunchScreen.storyboard */; };
 		8A08BD581D244E4D00468D2A /* ReaderExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A08BD571D244E4D00468D2A /* ReaderExampleTests.m */; };
 		8A08BD631D244E4D00468D2A /* ReaderExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A08BD621D244E4D00468D2A /* ReaderExampleUITests.m */; };
+		8A1AE1FA1D262F7C0092CB1F /* ErrorEventTextProducer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE1F91D262F7C0092CB1F /* ErrorEventTextProducer.m */; };
 		8A72F9D01D246479004D1A92 /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A72F9CF1D246479004D1A92 /* PaymentViewController.m */; };
 		8A72F9D31D246490004D1A92 /* PaymentPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A72F9D21D246490004D1A92 /* PaymentPresenter.m */; };
 		8A72F9D61D2468D1004D1A92 /* PaymentParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A72F9D51D2468D1004D1A92 /* PaymentParameters.m */; };
@@ -22,6 +23,8 @@
 		8A72F9DC1D248CF7004D1A92 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A72F9DE1D248CF7004D1A92 /* Localizable.strings */; };
 		8A72F9E61D249FE4004D1A92 /* ProcessingEventTextProducer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A72F9E51D249FE4004D1A92 /* ProcessingEventTextProducer.m */; };
 		8A72F9E91D24AF64004D1A92 /* PaymentParametersBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A72F9E81D24AF64004D1A92 /* PaymentParametersBuilder.m */; };
+		8AEAF07C1D25214E002FD507 /* MiuraEventTextProducer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEAF07B1D25214E002FD507 /* MiuraEventTextProducer.m */; };
+		8AEAF07F1D252161002FD507 /* SpireEventTextProducer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEAF07E1D252161002FD507 /* SpireEventTextProducer.m */; };
 		D96529CAD505B778E723E1CA /* libPods-ReaderExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CC559A422094AE5E7222E6 /* libPods-ReaderExample.a */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +64,8 @@
 		8A08BD5E1D244E4D00468D2A /* ReaderExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReaderExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A08BD621D244E4D00468D2A /* ReaderExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReaderExampleUITests.m; sourceTree = "<group>"; };
 		8A08BD641D244E4D00468D2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A1AE1F81D262F7C0092CB1F /* ErrorEventTextProducer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorEventTextProducer.h; sourceTree = "<group>"; };
+		8A1AE1F91D262F7C0092CB1F /* ErrorEventTextProducer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorEventTextProducer.m; sourceTree = "<group>"; };
 		8A72F9CD1D246388004D1A92 /* PaymentContract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentContract.h; sourceTree = "<group>"; };
 		8A72F9CE1D246479004D1A92 /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
 		8A72F9CF1D246479004D1A92 /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
@@ -76,6 +81,10 @@
 		8A72F9E51D249FE4004D1A92 /* ProcessingEventTextProducer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessingEventTextProducer.m; sourceTree = "<group>"; };
 		8A72F9E71D24AF64004D1A92 /* PaymentParametersBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentParametersBuilder.h; sourceTree = "<group>"; };
 		8A72F9E81D24AF64004D1A92 /* PaymentParametersBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentParametersBuilder.m; sourceTree = "<group>"; };
+		8AEAF07A1D25214E002FD507 /* MiuraEventTextProducer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiuraEventTextProducer.h; sourceTree = "<group>"; };
+		8AEAF07B1D25214E002FD507 /* MiuraEventTextProducer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiuraEventTextProducer.m; sourceTree = "<group>"; };
+		8AEAF07D1D252161002FD507 /* SpireEventTextProducer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpireEventTextProducer.h; sourceTree = "<group>"; };
+		8AEAF07E1D252161002FD507 /* SpireEventTextProducer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpireEventTextProducer.m; sourceTree = "<group>"; };
 		A41C532CB5E70CA241F2EC12 /* Pods-ReaderExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReaderExample/Pods-ReaderExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -220,6 +229,12 @@
 				8A72F9DA1D2487B7004D1A92 /* ReaderEventTextProducer.m */,
 				8A72F9E41D249FE4004D1A92 /* ProcessingEventTextProducer.h */,
 				8A72F9E51D249FE4004D1A92 /* ProcessingEventTextProducer.m */,
+				8AEAF07A1D25214E002FD507 /* MiuraEventTextProducer.h */,
+				8AEAF07B1D25214E002FD507 /* MiuraEventTextProducer.m */,
+				8AEAF07D1D252161002FD507 /* SpireEventTextProducer.h */,
+				8AEAF07E1D252161002FD507 /* SpireEventTextProducer.m */,
+				8A1AE1F81D262F7C0092CB1F /* ErrorEventTextProducer.h */,
+				8A1AE1F91D262F7C0092CB1F /* ErrorEventTextProducer.m */,
 			);
 			path = i18n;
 			sourceTree = "<group>";
@@ -410,14 +425,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A1AE1FA1D262F7C0092CB1F /* ErrorEventTextProducer.m in Sources */,
 				8A72F9E61D249FE4004D1A92 /* ProcessingEventTextProducer.m in Sources */,
 				8A08BD451D244E4D00468D2A /* ViewController.m in Sources */,
 				8A08BD421D244E4D00468D2A /* AppDelegate.m in Sources */,
 				8A72F9D61D2468D1004D1A92 /* PaymentParameters.m in Sources */,
+				8AEAF07F1D252161002FD507 /* SpireEventTextProducer.m in Sources */,
 				8A72F9D31D246490004D1A92 /* PaymentPresenter.m in Sources */,
 				8A72F9DB1D2487B7004D1A92 /* ReaderEventTextProducer.m in Sources */,
 				8A08BD3F1D244E4D00468D2A /* main.m in Sources */,
 				8A72F9D01D246479004D1A92 /* PaymentViewController.m in Sources */,
+				8AEAF07C1D25214E002FD507 /* MiuraEventTextProducer.m in Sources */,
 				8A72F9E91D24AF64004D1A92 /* PaymentParametersBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
