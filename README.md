@@ -1,5 +1,7 @@
 # Example of using PaynetEasyReader library
 
+[![Build Status](https://travis-ci.org/payneteasy/ReaderExample.svg?branch=master)](https://travis-ci.org/payneteasy/ReaderExample)
+
 #### Set up the project dependencies
 
 ```
