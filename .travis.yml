@@ -3,6 +3,7 @@ language: objective-c
 
 script:
   - open -b com.apple.iphonesimulator
+  - sed -i -e 's/git@github.com:/git:\/\/github.com\//' Podfile
   - set -o pipefail && env NSUnbufferedIO=YES
     xcodebuild test
     -workspace ReaderExample.xcworkspace
