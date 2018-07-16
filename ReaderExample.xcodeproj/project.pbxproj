@@ -15,16 +15,11 @@
 		8A08BD4D1D244E4D00468D2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A08BD4B1D244E4D00468D2A /* LaunchScreen.storyboard */; };
 		8A08BD581D244E4D00468D2A /* ReaderExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A08BD571D244E4D00468D2A /* ReaderExampleTests.m */; };
 		8A08BD631D244E4D00468D2A /* ReaderExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A08BD621D244E4D00468D2A /* ReaderExampleUITests.m */; };
-		8A1AE1FA1D262F7C0092CB1F /* ErrorEventTextProducer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AE1F91D262F7C0092CB1F /* ErrorEventTextProducer.m */; };
 		8A72F9D01D246479004D1A92 /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A72F9CF1D246479004D1A92 /* PaymentViewController.m */; };
 		8A72F9D31D246490004D1A92 /* PaymentPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A72F9D21D246490004D1A92 /* PaymentPresenter.m */; };
 		8A72F9D61D2468D1004D1A92 /* PaymentParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A72F9D51D2468D1004D1A92 /* PaymentParameters.m */; };
-		8A72F9DB1D2487B7004D1A92 /* ReaderEventTextProducer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A72F9DA1D2487B7004D1A92 /* ReaderEventTextProducer.m */; };
-		8A72F9DC1D248CF7004D1A92 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A72F9DE1D248CF7004D1A92 /* Localizable.strings */; };
-		8A72F9E61D249FE4004D1A92 /* ProcessingEventTextProducer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A72F9E51D249FE4004D1A92 /* ProcessingEventTextProducer.m */; };
 		8A72F9E91D24AF64004D1A92 /* PaymentParametersBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A72F9E81D24AF64004D1A92 /* PaymentParametersBuilder.m */; };
-		8AEAF07C1D25214E002FD507 /* MiuraEventTextProducer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEAF07B1D25214E002FD507 /* MiuraEventTextProducer.m */; };
-		8AEAF07F1D252161002FD507 /* SpireEventTextProducer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEAF07E1D252161002FD507 /* SpireEventTextProducer.m */; };
+		A558779C20FCA3FB0036F2D2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A558779E20FCA3FB0036F2D2 /* Localizable.strings */; };
 		D96529CAD505B778E723E1CA /* libPods-ReaderExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CC559A422094AE5E7222E6 /* libPods-ReaderExample.a */; };
 /* End PBXBuildFile section */
 
@@ -64,8 +59,6 @@
 		8A08BD5E1D244E4D00468D2A /* ReaderExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReaderExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A08BD621D244E4D00468D2A /* ReaderExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReaderExampleUITests.m; sourceTree = "<group>"; };
 		8A08BD641D244E4D00468D2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A1AE1F81D262F7C0092CB1F /* ErrorEventTextProducer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorEventTextProducer.h; sourceTree = "<group>"; };
-		8A1AE1F91D262F7C0092CB1F /* ErrorEventTextProducer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorEventTextProducer.m; sourceTree = "<group>"; };
 		8A72F9CD1D246388004D1A92 /* PaymentContract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentContract.h; sourceTree = "<group>"; };
 		8A72F9CE1D246479004D1A92 /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
 		8A72F9CF1D246479004D1A92 /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
@@ -73,19 +66,11 @@
 		8A72F9D21D246490004D1A92 /* PaymentPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentPresenter.m; sourceTree = "<group>"; };
 		8A72F9D41D2468D1004D1A92 /* PaymentParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentParameters.h; sourceTree = "<group>"; };
 		8A72F9D51D2468D1004D1A92 /* PaymentParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentParameters.m; sourceTree = "<group>"; };
-		8A72F9D91D2487B7004D1A92 /* ReaderEventTextProducer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderEventTextProducer.h; sourceTree = "<group>"; };
-		8A72F9DA1D2487B7004D1A92 /* ReaderEventTextProducer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderEventTextProducer.m; sourceTree = "<group>"; };
-		8A72F9E21D248E85004D1A92 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
-		8A72F9E31D248E94004D1A92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		8A72F9E41D249FE4004D1A92 /* ProcessingEventTextProducer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessingEventTextProducer.h; sourceTree = "<group>"; };
-		8A72F9E51D249FE4004D1A92 /* ProcessingEventTextProducer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessingEventTextProducer.m; sourceTree = "<group>"; };
 		8A72F9E71D24AF64004D1A92 /* PaymentParametersBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentParametersBuilder.h; sourceTree = "<group>"; };
 		8A72F9E81D24AF64004D1A92 /* PaymentParametersBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentParametersBuilder.m; sourceTree = "<group>"; };
-		8AEAF07A1D25214E002FD507 /* MiuraEventTextProducer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiuraEventTextProducer.h; sourceTree = "<group>"; };
-		8AEAF07B1D25214E002FD507 /* MiuraEventTextProducer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiuraEventTextProducer.m; sourceTree = "<group>"; };
-		8AEAF07D1D252161002FD507 /* SpireEventTextProducer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpireEventTextProducer.h; sourceTree = "<group>"; };
-		8AEAF07E1D252161002FD507 /* SpireEventTextProducer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpireEventTextProducer.m; sourceTree = "<group>"; };
 		A41C532CB5E70CA241F2EC12 /* Pods-ReaderExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReaderExample/Pods-ReaderExample.debug.xcconfig"; sourceTree = "<group>"; };
+		A558779D20FCA3FB0036F2D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A558779F20FCA3FC0036F2D2 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +149,7 @@
 				8A08BD461D244E4D00468D2A /* Main.storyboard */,
 				8A08BD491D244E4D00468D2A /* Assets.xcassets */,
 				8A08BD4B1D244E4D00468D2A /* LaunchScreen.storyboard */,
+				A558779E20FCA3FB0036F2D2 /* Localizable.strings */,
 				8A08BD4E1D244E4D00468D2A /* Info.plist */,
 				8A08BD3D1D244E4D00468D2A /* Supporting Files */,
 			);
@@ -199,7 +185,6 @@
 		B2DF65B376EBC53A16B3B4F7 /* PaymentModule */ = {
 			isa = PBXGroup;
 			children = (
-				B2DF6DC9C1E2A33E6BA317BC /* i18n */,
 				B2DF6D1F8E26338E383D5284 /* Parameters */,
 				8A72F9CD1D246388004D1A92 /* PaymentContract.h */,
 				8A72F9CE1D246479004D1A92 /* PaymentViewController.h */,
@@ -221,24 +206,6 @@
 			path = Parameters;
 			sourceTree = "<group>";
 		};
-		B2DF6DC9C1E2A33E6BA317BC /* i18n */ = {
-			isa = PBXGroup;
-			children = (
-				8A72F9DE1D248CF7004D1A92 /* Localizable.strings */,
-				8A72F9D91D2487B7004D1A92 /* ReaderEventTextProducer.h */,
-				8A72F9DA1D2487B7004D1A92 /* ReaderEventTextProducer.m */,
-				8A72F9E41D249FE4004D1A92 /* ProcessingEventTextProducer.h */,
-				8A72F9E51D249FE4004D1A92 /* ProcessingEventTextProducer.m */,
-				8AEAF07A1D25214E002FD507 /* MiuraEventTextProducer.h */,
-				8AEAF07B1D25214E002FD507 /* MiuraEventTextProducer.m */,
-				8AEAF07D1D252161002FD507 /* SpireEventTextProducer.h */,
-				8AEAF07E1D252161002FD507 /* SpireEventTextProducer.m */,
-				8A1AE1F81D262F7C0092CB1F /* ErrorEventTextProducer.h */,
-				8A1AE1F91D262F7C0092CB1F /* ErrorEventTextProducer.m */,
-			);
-			path = i18n;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -250,8 +217,7 @@
 				8A08BD361D244E4D00468D2A /* Sources */,
 				8A08BD371D244E4D00468D2A /* Frameworks */,
 				8A08BD381D244E4D00468D2A /* Resources */,
-				BEA6C43858182B26F0108557 /* [CP] Embed Pods Frameworks */,
-				BAA804B1E41C989050761162 /* [CP] Copy Pods Resources */,
+				FC8F4562ADE9B884AD1705EB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -309,7 +275,8 @@
 				TargetAttributes = {
 					8A08BD391D244E4D00468D2A = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = QE2M7G5E22;
+						DevelopmentTeam = 8MLSXY8DHA;
+						ProvisioningStyle = Automatic;
 					};
 					8A08BD521D244E4D00468D2A = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -350,7 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A08BD4D1D244E4D00468D2A /* LaunchScreen.storyboard in Resources */,
-				8A72F9DC1D248CF7004D1A92 /* Localizable.strings in Resources */,
+				A558779C20FCA3FB0036F2D2 /* Localizable.strings in Resources */,
 				8A08BD4A1D244E4D00468D2A /* Assets.xcassets in Resources */,
 				8A08BD481D244E4D00468D2A /* Main.storyboard in Resources */,
 			);
@@ -379,43 +346,34 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReaderExample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BAA804B1E41C989050761162 /* [CP] Copy Pods Resources */ = {
+		FC8F4562ADE9B884AD1705EB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ReaderExample/Pods-ReaderExample-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/PayneteasyReaderI18n/PayneteasyReaderEvents.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PayneteasyReaderEvents.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReaderExample/Pods-ReaderExample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BEA6C43858182B26F0108557 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReaderExample/Pods-ReaderExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -425,17 +383,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A1AE1FA1D262F7C0092CB1F /* ErrorEventTextProducer.m in Sources */,
-				8A72F9E61D249FE4004D1A92 /* ProcessingEventTextProducer.m in Sources */,
 				8A08BD451D244E4D00468D2A /* ViewController.m in Sources */,
 				8A08BD421D244E4D00468D2A /* AppDelegate.m in Sources */,
 				8A72F9D61D2468D1004D1A92 /* PaymentParameters.m in Sources */,
-				8AEAF07F1D252161002FD507 /* SpireEventTextProducer.m in Sources */,
 				8A72F9D31D246490004D1A92 /* PaymentPresenter.m in Sources */,
-				8A72F9DB1D2487B7004D1A92 /* ReaderEventTextProducer.m in Sources */,
 				8A08BD3F1D244E4D00468D2A /* main.m in Sources */,
 				8A72F9D01D246479004D1A92 /* PaymentViewController.m in Sources */,
-				8AEAF07C1D25214E002FD507 /* MiuraEventTextProducer.m in Sources */,
 				8A72F9E91D24AF64004D1A92 /* PaymentParametersBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,11 +441,11 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		8A72F9DE1D248CF7004D1A92 /* Localizable.strings */ = {
+		A558779E20FCA3FB0036F2D2 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8A72F9E21D248E85004D1A92 /* ru */,
-				8A72F9E31D248E94004D1A92 /* en */,
+				A558779D20FCA3FB0036F2D2 /* en */,
+				A558779F20FCA3FC0036F2D2 /* ru */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -589,11 +542,15 @@
 			baseConfigurationReference = A41C532CB5E70CA241F2EC12 /* Pods-ReaderExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MLSXY8DHA;
 				INFOPLIST_FILE = ReaderExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.payneteasy.ReaderExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -602,11 +559,15 @@
 			baseConfigurationReference = 50436C65D8A0976D3CE3E948 /* Pods-ReaderExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MLSXY8DHA;
 				INFOPLIST_FILE = ReaderExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.payneteasy.ReaderExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
