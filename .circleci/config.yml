@@ -1,0 +1,17 @@
+version: 2
+jobs:
+  build1000:
+    macos:
+      xcode: "10.0.0"
+    steps:
+      - checkout
+      - run:
+          name: Build
+          command: .circleci/build.sh
+
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build1000
